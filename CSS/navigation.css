@@ -1,0 +1,16 @@
+.navigation {
+    border-bottom: 1px solid rgba(82, 121, 194, 0.945);
+    margin-bottom: 40px;
+}
+
+.navigation__list {
+    list-style: none;
+    line-height: 2;
+    color: rgb(44, 74, 139);
+    text-align: center;
+    font-size: large;
+}
+
+.navigation__special {
+    margin-left: 50px;
+}

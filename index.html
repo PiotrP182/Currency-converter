@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency converter</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@300;700&display=swap" rel="stylesheet">
+    <link href="CSS/style.css" rel=stylesheet>
+    <link href="CSS/form.css" rel=stylesheet>
+    <link href="CSS/navigation.css" rel=stylesheet>
+    <script defer src="script/script.js"></script>
+</head>
+
+<body class="body">
+    <div class="container">
+        <nav class="navigation">
+            <ul class="navigation__list">
+                <li class="navigation__item">EUR/PLN <span class="navigation__special">Kupno 4,55 / Sprzedaż
+                        4,57</span></li>
+                <li class="navigation__item">USD/PLN <span class="navigation__special">Kupno 3,76 / Sprzedaż
+                        3,78</span></li>
+                <li class="navigation__item">CHF/PLN <span class="navigation__special">Kupno 4,12 / Sprzedaż
+                        4,14</span></li>
+            </ul>
+
+        </nav>
+
+        <form class="form js-form">
+            <fieldset class="form__fieldset">
+                <legend class="form__legend">Kalkulator walutowy</legend>
+                <p>
+                    <label><span class="form__labelText">Kwota, jaką posiadam<span
+                                class="form__specialElement">*</span>:</span> <input class="js-haveAmount form__Amount"
+                            required type="number" name="Amount" min="1" placeholder="1000" autofocus>
+                        <select class="js-bidCurrency form__select" name="currency">
+                            <option value="PLN" selected>PLN</option>
+                            <option value="EUR">EUR</option>
+                            <option value="USD">USD</option>
+                            <option value="CHF">CHF</option>
+                        </select>
+
+                    </label>
+                </p>
+                <p>
+                    <label><span class="form__labelText">Kwota, jaką otrzymam :</span> <input
+                            class="js-giveAmount form__Amount" name="giveAmount" readonly>
+                        <select class="js-askCurrency form__select" name="currency">
+                            <option value="PLN">PLN</option>
+                            <option value="EUR" selected>EUR</option>
+                            <option value="USD">USD</option>
+                            <option value="CHF">CHF</option>
+                        </select>
+                    </label>
+                </p>
+                <p><span class="form__specialElement">*</span>pola wymagane</p>
+
+            </fieldset>
+            <p>
+                <button class="form__button">Przelicz</button><br>
+                <button class="form__button" type="reset">Reset</button>
+            </p>
+        </form>
+    </div>
+
+
+
+</body>
+
+</html>

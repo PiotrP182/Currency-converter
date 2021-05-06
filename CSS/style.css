@@ -1,0 +1,16 @@
+html {
+    box-sizing: border-box;
+}
+
+*, ::after, ::before {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0 auto;
+    max-width: 800px;
+    font-family: 'Antonio', sans-serif;
+    padding: 0 20px;
+    background-image: url("../images/background.png");
+    background-size: cover;
+}
