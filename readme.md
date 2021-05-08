@@ -12,4 +12,4 @@ Here you can convert currencies and check how much currency you can have by sell
 ### Used Technologies
 CSS, BEM, Semantic HTML, ES6 features
 
-![main page](https://github.com/PiotrP182/Currency-converter/blob/main/images/main%20page.PNG?raw=true)
+![main page](https://piotrp182.github.io/Currency-converter/)
